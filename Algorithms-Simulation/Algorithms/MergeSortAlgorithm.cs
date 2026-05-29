@@ -82,7 +82,7 @@ public class MergeSortAlgorithm : ISortingAlgorithm
             array,
             SortingOperation.Merge,
             "Rozdeleni",
-            $"Zpracovavame rozsah {left}–{right}.",
+            $"Zpracovavame rozsah {left}-{right}.",
             comparisons,
             0,
             writes,
@@ -203,12 +203,12 @@ public class MergeSortAlgorithm : ISortingAlgorithm
             array,
             SortingOperation.Merge,
             "Slouceni dokonceno",
-            $"Rozsah {left}–{right} je nyni serazeny po slouceni.",
+            $"Rozsah {left}-{right} je nyni serazeny po slouceni.",
             comparisons,
             0,
             writes,
             isMajorStep: true,
-            groupTitle: $"Po slouceni rozsahu {left}–{right}",
+            groupTitle: $"Po slouceni rozsahu {left}-{right}",
             sortedIndices: mergedIndices));
     }
 

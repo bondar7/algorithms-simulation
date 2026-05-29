@@ -47,8 +47,8 @@ public class BubbleSortAlgorithm : ISortingAlgorithm
                 steps.Add(CreateStep(
                     array,
                     SortingOperation.Compare,
-                    "Porovn?n?",
-                    $"Porovn?n? {array[j]} a {array[j + 1]}.",
+                    "Porovnani",
+                    $"Porovnani {array[j]} a {array[j + 1]}.",
                     comparisons,
                     swaps,
                     writes,

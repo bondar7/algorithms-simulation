@@ -90,7 +90,7 @@ public class QuickSortAlgorithm : ISortingAlgorithm
             array,
             SortingOperation.Partition,
             "Rozdeleni dokonceno",
-            $"Pivot je na finalni pozici {pivotIndex} v rozsahu {low}–{high}.",
+            $"Pivot je na finalni pozici {pivotIndex} v rozsahu {low}-{high}.",
             comparisons,
             swaps,
             writes,

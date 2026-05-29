@@ -13,20 +13,20 @@ public class ArrayParser
 
         if (string.IsNullOrWhiteSpace(input))
         {
-            errorMessage = "Zadejte pros?m seznam cel?ch ??sel odd?len?ch ??rkami.";
+            errorMessage = "Zadejte prosim seznam celych cisel oddelenych carkami.";
             return false;
         }
 
         var parts = input.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
         if (parts.Length == 0)
         {
-            errorMessage = "Zadejte pros?m seznam cel?ch ??sel odd?len?ch ??rkami.";
+            errorMessage = "Zadejte prosim seznam celych cisel oddelenych carkami.";
             return false;
         }
 
         if (parts.Length > maxLength)
         {
-            errorMessage = $"Zadejte pros?m nejv??e {maxLength} ??sel.";
+            errorMessage = $"Zadejte prosim nejvyse {maxLength} cisel.";
             return false;
         }
 
@@ -35,7 +35,7 @@ public class ArrayParser
         {
             if (!int.TryParse(part, out var value))
             {
-                errorMessage = $"'{part}' nen? platn? cel? ??slo.";
+                errorMessage = $"'{part}' neni platne cele cislo.";
                 return false;
             }
 
